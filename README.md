@@ -20,7 +20,7 @@ To use this code for other archives, save the file numbers from the JavaScript C
 `$sudo -H pip3 install numpy`\
 `$sudo -H pip3 install pyautogui`\
 `$sudo -H pip3 install matplotlib`\
-`$sudo -H pip3 install sklearn`\
+`$sudo -H pip3 install sklearn`
 ## To come:
 1. The clustering part will be added soon in order to carry out automatic anomaly detection.
 2. After the entire pipeline is up and running, I plan on deploying the model on a website that I will be designing and making. I might go for Heroku or some other similar service.
