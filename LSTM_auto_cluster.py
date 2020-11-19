@@ -89,6 +89,7 @@ We will now define and train the autoencoder model.
 from keras.models import Sequential
 from keras.layers import LSTM, Dense, Dropout, TimeDistributed, RepeatVector # Importing Functions to create the Autoencoder
 
+t=filtered.shape[0]
 # define model
 encoded = Sequential()
 encoded.add(LSTM(100, activation = 'relu', input_shape=(t,1)))
