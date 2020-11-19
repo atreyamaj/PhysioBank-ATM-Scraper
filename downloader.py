@@ -93,9 +93,9 @@ for i in numbers:
             file_open.close()
             sleep(2)
         else:
-            os.remove("records/" + num + "m.info")
+            os.remove("records/" + num + "m.info") #If ABP and PLETH don't exist, delete the .info file
             file_open = open("Download_log.txt", "a")
-            file_open.write("No ABP and PLETH. Deleting info file for record " + num) #If ABP and PLETH don't exist, delete the .info file
+            file_open.write("No ABP and PLETH. Deleting info file for record " + num) #Updating Log
     else:
         continue #To avoid runtime errors
 
