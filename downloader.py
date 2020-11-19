@@ -62,7 +62,7 @@ for i in numbers:
     dwn = "records/"  #Directory for saving the files
     new = dwn + num + info_name
     base = dwn + num
-    #print(new)
+    
     if os.path.exists(new): #Checks if the file has finished downloading and exists in the download directory
         file_open = open("Download_log.txt","a") #Log to track which actions are being taken
         file_open.write("Downloading mat file for " + num + "\n") #Updating the download log.
