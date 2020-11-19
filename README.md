@@ -1,7 +1,7 @@
 # Anomaly Detection in PhysioBank ATM ECG Heart Beat data
 
 The PhysioBank ECG ATM, maintained by MIT, is notoriously hard to scrape as it is designed to block users from accessing the site as soon as it detects any sort of automation. 
-To this end, I have written a GUI Manipulation-based scraper in order to get ECG data from the ATM which mimics how a human would navigate through the ATM, after which I use an LSTM autoencoder in order to encode the data and cluster them later for automatic anomaly detection to find if a person's heartbeat is indicative of a potential cardiac disorder. 
+To bypass this, I have written a scraper that makes use of GUI manipulation in order to get ECG data from the ATM which mimics how a human would navigate through the ATM, after which I use an LSTM autoencoder in order to encode the data and cluster them later for automatic anomaly detection to find if a person's heartbeat is indicative of a potential cardiac disorder. 
 This repository currently contains code upto the Autoencoder step.
 
 
@@ -14,3 +14,13 @@ To use this code for other archives, save the file numbers from the JavaScript C
 
 4. After everything is set up, run 'downloader.py' to download the ECG data.
 5. After the data is downlaoded, run 'LSTM_auto_cluster.py' in order to auto-Encode the data using LSTMs. The clustering step will be added soon. 
+6. Install Python 3.6.x, and the following libraries: PyAutoGUI, Keras, Numpy, Matplotlib.pyplot, Sci-kit Learn
+
+$sudo -H pip3 install keras
+$sudo -H pip3 install numpy
+$sudo -H pip3 install pyautogui
+$sudo -H pip3 install matplotlib
+$sudo -H pip3 install sklearn
+## To come:
+1. The clustering part will be added soon in order to carry out automatic anomaly detection.
+2. After the entire pipeline is up and running, I plan on deploying the model on a website that I will be designing and making. I might go for Heroku or some other similar service.

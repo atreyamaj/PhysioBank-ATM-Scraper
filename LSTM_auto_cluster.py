@@ -83,7 +83,9 @@ for i in range(1,len(filtered)):
 
 np.array(x).tofile('value_file.npy') #This creates the Numpy Binary file
 #__________________________________________________________
-
+'''
+We will now define and train the autoencoder model.
+'''
 from keras.models import Sequential
 from keras.layers import LSTM, Dense, Dropout, TimeDistributed, RepeatVector # Importing Functions to create the Autoencoder
 
@@ -95,6 +97,6 @@ decoded = LSTM(100, activation='relu', return_sequences=True)(encoded)
 decoded.add(LSTM(t, return_sequences=True))
 decoded.compile(optimizer='adam', loss='mse')
 
-decoded.fit(filtered, filtered, epochs = 5, verbose = 0)
+decoded.fit(filtered, filtered, epochs = 5, verbose = 0) #Training the model
 
-decoded.save('LSTM_AutoEncoder_CDL')
+decoded.save('LSTM_AutoEncoder_CDL') #Saving the model weights in case we need to access them at a later date.
