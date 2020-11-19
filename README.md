@@ -10,7 +10,7 @@ This repository currently contains code upto the Autoencoder step.
 2. Edit the paths used accordingly.
 3. This code is specific to the "MIMIC II/III Waveform Database, part 0 (mimic2wdb/30)" archive at https://archive.physionet.org/cgi-bin/atm/ATM/
 
-To use this code for other archives, save the file numbers from the JavaScript Code (You can find this using Inspect Element) and use a Matlab delimiter on it to segretate the file names.
+To use this code for other archives, save the file numbers from the JavaScript Code (You can find this using Inspect Element) and use a Matlab delimiter on it to segretate the file names. The numbers are stored in try11.txt for this archive. For archives 31 and 32, the numbers are stored in try13.txt and try15.txt respectively.
 
 4. After everything is set up, run 'downloader.py' to download the ECG data.
 5. After the data is downlaoded, run 'LSTM_auto_cluster.py' in order to auto-Encode the data using LSTMs. The clustering step will be added soon. 
