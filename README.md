@@ -7,7 +7,7 @@ This repository currently contains code upto the Autoencoder step.
 
 ## To Use this Repository:
 1. Make a folder named 'Records' or whatever name you want (edit the code accordingly), and set Chrome's download folder to your folder.
-2. Edit the paths used accordingly.
+2. Edit the file paths used accordingly.
 3. This code is specific to the "MIMIC II/III Waveform Database, part 0 (mimic2wdb/30)" archive at https://archive.physionet.org/cgi-bin/atm/ATM/
 
 To use this code for other archives, save the file numbers from the JavaScript Code (You can find this using Inspect Element) and use a Matlab delimiter on it to segretate the file names. The numbers are stored in try11.txt for this archive. For archives 31 and 32, the numbers are stored in try13.txt and try15.txt respectively.
