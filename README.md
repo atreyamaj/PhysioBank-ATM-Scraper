@@ -16,7 +16,7 @@ To use this code for other archives, save the file numbers from the JavaScript C
 5. After the data is downlaoded, run 'LSTM_auto_cluster.py' in order to auto-Encode the data using LSTMs. The clustering step will be added soon. 
 6. Install Python 3.6.x, and the following libraries: PyAutoGUI, Keras, Numpy, Matplotlib.pyplot, Sci-kit Learn
 
-$sudo -H pip3 install keras
+`$sudo -H pip3 install keras`
 $sudo -H pip3 install numpy
 $sudo -H pip3 install pyautogui
 $sudo -H pip3 install matplotlib
