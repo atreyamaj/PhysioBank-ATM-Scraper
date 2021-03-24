@@ -16,12 +16,8 @@ To use this code for other archives, save the file numbers from the JavaScript C
 5. After the data is downlaoded, run 'LSTM_auto_cluster.py' in order to auto-Encode the data using LSTMs. The clustering step will be added soon. 
 6. Install Python 3.6.x, and the following libraries: PyAutoGUI, Keras, Numpy, Matplotlib.pyplot, Sci-kit Learn
 
-`$sudo -H pip3 install keras`\
-`$sudo -H pip3 install numpy`\
-`$sudo -H pip3 install pyautogui`\
-`$sudo -H pip3 install matplotlib`\
-`$sudo -H pip3 install sklearn`
-
+`$sudo -H pip3 install keras numpy pyautogui matplotlib sklearn`
+  
 The above is meant for Debian Linux based distributions (In my case, I used Ubuntu 20.04 LTS)
 ## To come:
 1. The clustering part will be added soon in order to carry out automatic anomaly detection.
